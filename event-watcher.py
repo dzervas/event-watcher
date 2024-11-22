@@ -57,7 +57,9 @@ for event in unique_events.values():
     title = html.escape(event["title"])
     url = url_endpoint + event["url"]
     print(f" - {event['title']}: {url}")
+    print(f"\t{event['description']}")
     message_lines.append(f' - <a href="{url}">{title}</a>')
+    message_lines.append(f"\t{event['description']}")
 
 # Join all message lines
 message = "\n".join(message_lines)
