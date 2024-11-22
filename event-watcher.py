@@ -2,9 +2,7 @@
 import requests
 import html
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
 chat_id = os.environ.get('TELEGRAM_CHAT_ID')
 endpoint = "https://tickets.public.gr/_api/search?q="
